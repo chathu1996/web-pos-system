@@ -1,259 +1,35 @@
-
-/*aside bar style*/
-.wrapper {
-    position: relative;
-    overflow: hidden;
-    min-height: 1200px;
+*{
+    margin: 0;
+    padding: 0;
 }
-.left-bar {
-    background-color: #373942;
-    position: fixed;
-    height: 100%;
-    width: 205px;
-    transition: width 0.3s ease-in-out;
-    display: block;
-    float: left;
-    overflow: hidden;
-    outline: none;
-}
-.left-bar .admin-logo {
-    background-color: #489ee7;
-    min-height: 60px;
-    position: absolute !important;
+.wrapper{
     width: 100%;
-    z-index: 999;
-}
-.left-bar .admin-logo .logo-holder {
-    width: 100%;
-    text-align: center;
-    padding-top: 9px;
-    margin-left: 5px;
-}
-.pull-left {
-    float: left!important;
-}
-#header-logo{
-    transition: 0.3s ease-in-out;
-}
-.left-bar .admin-logo .logo-holder .logo {
-    width: 100px;
-}
-img {
-    vertical-align: middle;
-    border: 0;
-    width: 210px;
-    height: 60px;
     background-color: #489ee7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
+.wrapper .header_logo{
+    width: 50%;
+    margin-left: 50px;
 }
-ul {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-.left-bar .menu-parent{
-    overflow-x: hidden;
-    padding-top: 10px;
-    height: 100vh;
-}
- li.active.home {
-    border-left: 4px solid #489ee7;
+.wrapper .dashboard{
     color: white;
-    font-size: 20px;padding-left: 10px;
+    margin-right: 1200px;
+    font-size: 1.5rem;
 }
-.left-bar .menu-parent > li a {
-    color: #969AA7;
-}
-li.customer {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
+.navigation{
     color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.customer .text{
-    padding-left: 10px;
-}
-li.items {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.items .text{
-    padding-left: 10px;
-}
-li.item_kits {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.item_kits .text{
-    padding-left: 10px;
-}
-li.price_rules {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.price_rules .text{
-    padding-left: 10px;
-}
-li.suppliers {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.suppliers .text{
-    padding-left: 10px;
-}
-li.reports {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.reports .text{
-    padding-left: 10px;
-}
-li.receivings {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.receivings .text{
-    padding-left: 10px;
-}
-li.sales {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.sales .text{
-    padding-left: 10px;
-}
-li.deliveries {
-     margin-top: 10px;
-     margin-left: 5px;
-     padding-left: 15px;
-     color: white;
-     font-size: 20px;padding-left: 10px;
- }
-.deliveries .text{
-    padding-left: 10px;
-}
-li.work_orders {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.work_orders .text{
-    padding-left: 10px;
-}
-li.expenses {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.expenses .text{
-    padding-left: 10px;
-}
-li.appointments {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.appointments .text{
-    padding-left: 10px;
-}
-li.employees {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.employees .text{
-    padding-left: 10px;
-}
-li.giftcards {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.giftcards .text{
-    padding-left: 10px;
-}
-li.config {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.config .text{
-    padding-left: 10px;
-}
-li.locations {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.locations .text{
-    padding-left: 10px;
-}
-li.messages {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.messages .text{
-    padding-left: 10px;
-}
-li.logout {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;padding-left: 10px;
-}
-.logout .text{
-    padding-left: 10px;
-}
-/*Nav Bar Styling*/
-.navbar{
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    background-color: #489ee7;
-    top: 0px;
-    margin-left: 205px;
-    padding: 10px;
-    background-color: #969AA7;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1rem;
+}
+.navigation .person{
+    width: 50px;
+    border-radius: 50%;
+}
+.navigation .flag{
+    width: 10%;
 }
