@@ -10,8 +10,8 @@
     align-items: center;
 }
 .wrapper .header_logo{
-    width: 50%;
-    margin-left: 50px;
+    width: 10%;
+    margin-left: 70px;
 }
 .wrapper .dashboard{
     color: white;
@@ -24,7 +24,8 @@
     justify-content: space-between;
     gap: 1rem;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-right: 50px;
 }
 .navigation .person{
     width: 50px;
@@ -33,3 +34,40 @@
 .navigation .flag{
     width: 10%;
 }
+.admin-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-items{
+    background-color: #555555;
+    width: 250px;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-bottom: 200px;
+    height: 1700px;
+}
+.items{
+    margin-left: 50px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: 1.5rem;
+}
+.item-contiainer{
+   padding-top: 20px;
+}
+.items i{
+    padding: 20px;
+}
+.items li:hover{
+    background-color: black;
+    padding: 2px;
+    margin-left: 10px;
+}
+.items .dashboard:hover{
+    border-left: 5px solid #489ee7;
+}
+
