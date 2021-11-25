@@ -71,7 +71,23 @@
 .items .dashboard:hover {
   border-left: 5px solid #489ee7;
 }
-.main-content {
+body {
+  font-weight: 300;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  letter-spacing: 0.6px;
+  background-color: #e9ebee;
+  min-height: 100%;
+  color: #333;
+}
+.content{
+  margin-left: 205px;
+  background-color: #e9ebee;
+}
+.content .main-content {
   display: block;
   padding-left: 10px;
   padding-right: 10px;
@@ -85,24 +101,39 @@
   margin-left: 15px;
 }
 @media (min-width: 1200px) {
-  .col-lg-3 {
+  .dashboard-container {
     width: 25%;
   }
 }
 @media (min-width: 1200px) {
-  .col-lg-3 {
+  .dashboard-container {
     float: left;
   }
+}
+@media (min-width: 992px){
+.dashboard-container {
+    width: 50%;
+}
+.dashboard-container{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
 }
 .dashboard-status {
   background-color: #ffffff;
   position: relative;
-  min-height: 100px;
+  min-height: 107px;
   padding: 3px;
   padding-left: 5%;
   box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 10%);
   border-radius: 2px;
   display: table;
+
   width: 50%;
   text-align: left;
   margin-bottom: 10px;
@@ -113,10 +144,14 @@
 }
 .dashboard-status .left h3 {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 300px;
 }
 .flatBluec {
   color: #489ee7 !important;
+}
+.dashboard-status .right i{
+  vertical-align: middle;
+  line-height: 107px;
 }
 .dashboard-status .left h4 {
   font-size: 25px;
@@ -124,6 +159,7 @@
   color: #000;
   line-height: 24px;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .dashboard-status .right {
   position: absolute;
@@ -155,20 +191,6 @@
 .flatGreen {
   background-color: #6fd64b;
 }
-.dashboard-status .right1 {
-  position: absolute;
-  right: 3px;
-  top: 3px;
-  width: 30%;
-  bottom: 3px;
-  border-radius: 2px;
-  font-size: 48px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  line-height: 107px;
-  left: 200px;
-}
 .flatRedc {
   color: #fb5d5d !important;
 }
@@ -180,4 +202,14 @@
 }
 .flatOrangec {
   color: #f7941d !important;
+}
+.welcome-line{
+  text-align: center;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500px;
+  line-height: 1.1;
+  color: inherit;
 }
