@@ -42,7 +42,9 @@
 }
 .list-items {
   background-color: #555555;
-  width: 250px;
+  position: fixed;
+  width: 260px;
+  height: 100%;
   list-style: none;
   font-size: 1.2rem;
   margin-bottom: 200px;
@@ -70,6 +72,9 @@
 }
 .items .dashboard:hover {
   border-left: 5px solid #489ee7;
+  display: flex;
+  align-items: center;
+
 }
 body {
   font-weight: 300;
@@ -95,6 +100,7 @@ body {
 }
 .text-center {
   text-align: center;
+  margin-left: 30px;
 }
 .row {
   margin-right: -15px;
