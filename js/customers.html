@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title>Demo - PHP Point Of Sale | Easy to use Oline POS Software</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6d26e1183a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="admin-logo">
+        <img
+          src="/images/header_logo.png"
+          alt="header_logo"
+          class="header_logo"
+        />
+        <div class="dashboard">
+          <p>Dashboard</p>
+        </div>
+      </div>
+      <div class="navigation">
+        <p>Default</p>
+        <i class="fas fa-angle-down"></i>
+        <img src="/assets/english.png" alt="english" class="flag" />
+        <p>English</p>
+        <i class="fas fa-angle-down"></i>
+        <i class="far fa-bell"></i>
+        <img src="/assets/avatar-default.jpg" alt="person" class="person" />
+        <p class="name">Jhon Doe</p>
+      </div>
+    </div>
+    <aside class="list-items">
+      <div class="item-contiainer">
+        <div class="items">
+          <li class="dashboard">
+           <a href="index.html"> <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+          </li>
+          <li class="customers">
+            <a href="customers.html"><i class="far fa-user"></i>Customers</a>
+          </li>
+          <li><i class="far fa-hdd"></i>Items</li>
+          <li><i class="fas fa-hdd"></i>Item Kits</li>
+          <li><i class="fas fa-tag"></i>Price Rules</li>
+          <li><i class="fas fa-download"></i>Suppliers</li>
+          <li><i class="fas fa-chart-bar"></i>Reports</li>
+          <li><i class="fas fa-cloud-download-alt"></i>Receivings</li>
+          <li><i class="fas fa-shopping-cart"></i>Sales</li>
+          <li><i class="fas fa-car"></i>Deliveries</li>
+          <li><i class="fas fa-hammer"></i>Work Orders</li>
+          <li><i class="fas fa-pound-sign"></i>Expenss</li>
+          <li><i class="fas fa-calendar-week"></i>Appoinments</li>
+          <li><i class="fas fa-id-badge"></i>Employees</li>
+          <li><i class="fas fa-credit-card"></i>Gift Cards</li>
+          <li><i class="fas fa-cog"></i>Store Config</li>
+          <li><i class="fas fa-home"></i>Location</li>
+          <li><i class="fas fa-envelope"></i>Messages</li>
+          <li><i class="fas fa-clock"></i>Time Clock</li>
+          <li><i class="fas fa-power-off"></i>Logut</li>
+        </div>
+      </div>
+    </aside>
+    <div class="content" id="content">
+        <div class="main-ontent">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <form action="" id="search_form">
+                        <div class="search no-left-border">
+                            <ul class="list-inline">
+                                <li>
+                                    <input type="text" class="form-control ui-autocomplete-input" id="search" placeholder="Search Customer">
+                                </li>
+                                <li class="hidden-xs">
+                                    Location:
+                                    <div class="select2-container" id="s2id_location_id"></div>
+                                    <select name="location_id" id="location_id" class="select2-offscreen" tabindex="-1">
+                                        <option value="" selected="selected">All</option>
+                                        <option value="1">Sunyani</option>
+                                        <option value="2">Branch 2</option>
+                                        <option value="3">Taifa</option>
+                                        <option value="4">Radiare</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
